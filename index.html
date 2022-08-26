@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form Experiment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- Static Email Sending -->
+    <div class = "container">
+      <form action="https://formsubmit.co/alfonso@techmango.net" method="POST">
+        <h3>Contact Us</h3>
+        <input type="hidden" name="_subject" value="New email!" required>
+        <input type="text" name="name" placeholder ="Write your name here" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="hidden" name="_next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+        <input type="text" name="phone" placeholder ="Phone number" required>
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+   </form>
+    </div>
+	<!-- <form action="https://formsubmit.co/alfonso@techmango.net" method="POST">
+        <input type="hidden" name="_subject" value="New email!" required>
+        <input type="text" name="name" placeholder ="write your name here" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="hidden" name="_next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+        <input type="text" name="message" placeholder ="write your message here" required>
+        <button type="submit">Send</button>
+   </form> -->
+   <!-- Static Email Sending -->
+
+  <!-- Using Email Hosting Server -->
+   <!-- <div class = "container">
+    <form onsubmit = "sendEmail(); reset(); return false;">
+      <h3>Contact Us</h3>
+      <input type = "text" id="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="phone" placeholder ="Phone number" required>
+      <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+      <button type="submit">Send</button>
+    </form>
+   </div>
+
+   <script src="https://smtpjs.com/v3/smtp.js">
+    function sendEmail(){
+      Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "alfonso@techmango.net",
+          Password : "977F885306826F24B5162797A7E4E9F29D06",
+          To : "alfonso@techmango.net",
+          From : document.getElementbyId("email").value,
+          Subject : "Contact form inquiry",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script> -->
+<!-- Using Hosting Email Server -->
+  </body>
+</html>
