@@ -16,7 +16,14 @@
     justify-content: center;
 }
 
-form{
+  
+ .contact-form h3 { 
+    color: orange;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
     background: lightblue;
     display:flex;
     flex-direction: column;
@@ -24,24 +31,34 @@ form{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-}
-
-form h3{
-    color: orange;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-form input, form textarea{
+  }
+  
+  .contact-form label {
+    font-family: inherit;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  
+  .contact-form input:focus {
+    border-bottom: 2px solid orange;
+  }
+  
+  .contact-form input, textarea {
     border: 0;
     margin: 10px 0;
     padding: 20px;
     outline: none;
     background: white;
     font-size:16px;
-}
-
-form button{
+  }
+  
+  .contact-form textarea:focus {
+    border-bottom: 2px solid orange;
+  }
+  
+  .contact-form button {
     padding: 15px;
     font-size: 18px;
     background: orange;
@@ -52,4 +69,22 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius:30px;
-}
+    transition: 0.2s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background-color: orange;
+    border-bottom: 3px solid lightblue;
+  }
+  
+  @media all and (min-width: 1000px) {
+    .contact-form {
+      width: 40%;
+    }
+  }
+  
+  @media all and (min-width: 1080px) {
+    .contact-form {
+      width: 30%;
+    }
+  }
