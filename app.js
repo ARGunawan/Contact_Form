@@ -44,4 +44,11 @@ function saveContactInfo(name, email, phone, message) {
       message: message,
     });
   }
+
+  document.getElementById('button').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
   
+ document.querySelector('.close').addEventListener("click", function() {
+    document.querySelector('.bg-modal').style.display = "none";
+  });
